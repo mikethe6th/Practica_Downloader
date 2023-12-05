@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
     int i;
     int from, to;
     int pid;
-    char hash[] = "e4578889e6daf247d59a1a90f9113ce9";
+    
 
     if (!are_arguments_correct(argc, argv)) {
         return -1;
@@ -108,11 +108,8 @@ int main(int argc, char* argv[]) {
     printf ("-- End downloader --\n");
     char *command_cat = "cat download-* > complete_file";
     system(command_cat);
-    char *command_md5sum = "md5sum < complete_file";
-    printf("Checking hash....\n");
-    system(command_md5sum);
-    printf("Original hash: %s\n", hash);
-    printf("Hash checked and correct\n");
+
+    
 
     
 }
